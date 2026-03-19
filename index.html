@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentEdge Performance | Page Moved</title>
+    
+    <meta http-equiv="refresh" content="5;url=https://tep-sg.github.io/talentedge/">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling during redirect */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ffffff 0%, #a1a1a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vw;
+            max-width: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 5s linear;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-center px-6">
+
+    <div class="hero-glow"></div>
+
+    <div class="max-w-2xl space-y-10">
+        <div class="inline-block px-5 py-2 border border-white/10 rounded-full bg-white/5 text-[11px] font-bold tracking-[0.2em] text-blue-400 uppercase">
+            Website Relocation
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight gradient-text leading-tight">
+            We’ve Moved to <br> Our New Home
+        </h1>
+
+        <p class="text-gray-400 text-lg md:text-xl leading-relaxed font-medium">
+            TalentEdge Performance is evolving. You are being redirected to our updated platform at 
+            <span class="text-white">tep-sg.github.io</span>.
+        </p>
+
+        <div class="pt-4">
+            <a href="https://tep-sg.github.io/talentedge/" class="inline-block bg-white text-black px-10 py-4 rounded-2xl font-extrabold hover:scale-105 transition-transform shadow-lg">
+                Go to New Site Now
+            </a>
+        </div>
+
+        <div class="space-y-3">
+            <p class="text-xs text-gray-500 font-bold uppercase tracking-widest">Redirecting in 5 seconds...</p>
+            <div class="w-48 h-[2px] bg-white/5 mx-auto rounded-full overflow-hidden">
+                <div id="progress" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Start the progress bar animation on load
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('progress').style.width = '100%';
+            }, 100);
+        };
+    </script>
+
+</body>
+</html>
